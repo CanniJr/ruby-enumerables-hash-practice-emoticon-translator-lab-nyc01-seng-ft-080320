@@ -15,11 +15,11 @@ def load_library(file)
   result_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, emote)
   # code goes here
   library = load_library(file)
   word = library.keys.find do |key|
-    library[key][:english] == emoticon  
+    library[key][:english] == emote 
   end
   if word 
     library[word][:japanese]  
