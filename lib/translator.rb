@@ -16,7 +16,7 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, emoticon)
-  # code goes here
+  #code goes here
   library = load_library(file)
   word = library.keys.find do |key|
     library[key][:english] == emoticon  
