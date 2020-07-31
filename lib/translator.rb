@@ -19,7 +19,7 @@ def get_japanese_emoticon(file, emote)
   # code goes here
   library = load_library(file)
   word = library.keys.find do |key|
-    library[key][:english] == emote 
+    library[key][:english] == emoticon  
   end
   if word 
     library[word][:japanese]  
